@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  h1Style: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
   firstClick(){
-    console.log("clicked")
+    this.h1Style = true;
   }
 }
